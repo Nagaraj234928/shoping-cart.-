@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./address.css">
+    <script>
+        function validation(){
+            var name=document.myform.name.value;
+            var number=document.myform.number.value;
+            if(name==null||name==''){
+                alert('Name cont be blank');
+                return false;
+
+            }
+            else if(number.length<10 || number.length>10){
+                alert('number must be 10');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="./delivery.html" name="myform" onsubmit=" return validation()">
+        <h2 class="caption">delivery form</h2>
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter-name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" e-mail placeholder="enter e-mail" required>
+
+        <label for="email">phone number:</label>
+        <input class="number" type="number" name="number" placeholder="***** *****" required>
+
+
+        <label for="distric">Distric:</label>
+        <select id="payment-method" name="payment-method" required>
+             <option value=" delivery">The Nilgiris</option>
+             
+            
+        </select>
+
+        <label for="distric">Area:</label>
+        <select id="payment-method" name="payment-method" required>
+            <OPtion value="delivery">select your area...</OPtion>
+             <option value=" delivery">coonoor</option>
+             <option value=" delivery">ooty</option>
+             <option value=" delivery">gudalur</option>
+            
+        </select>
+
+       
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+            
+         <option value="cash on delivery">cash on delivery</option></select>
+        <button onsubmit="validation()">order</button>
+ 
+    </form>
+    
+    
+</body>
+</html>

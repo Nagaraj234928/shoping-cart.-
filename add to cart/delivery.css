@@ -1,0 +1,70 @@
+.truck{
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: -400px;
+    animation-name: truck-animation;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    
+}
+
+body{
+    overflow: hidden;
+}
+@keyframes truck-animation{
+    from {transform: translateX(0px);}
+    to{transform: translateX(1600px);}
+}
+.cloud{
+    top: 10px;
+    right:-200px;
+    position: absolute;
+    animation-name: cloud-animation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+@keyframes cloud-animation{
+    from {transform: translateX(0px);}
+    to{transform: translateX(-1000px);}
+}
+#divexample{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    display: flex;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 350px;
+    padding: 30px;
+    padding-right: 10px;
+    width: 750px;
+    height: 150px;
+    visibility: hidden;
+    opacity:0.9;
+}
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+button{
+    
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 220px;
+    border-radius: 20px;
+    color: rgb(40, 214, 176);
+    background-color: teal;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
